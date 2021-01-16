@@ -12,7 +12,7 @@
         <base.url>https://www.saucedemo.com/index.html</base.url>
         <cucumber.version>4.8.1</cucumber.version>
         <selenium.version>3.141.59</selenium.version>
-        <cucumber.filter>@Login</cucumber.filter>
+        <cucumber.filter>@SmokeTest</cucumber.filter>
         <cucumber.options>src/test/resources/features --glue com/swaglabs --tags ${cucumber.filter} --tags 'not @Bug' -p 'html:target/cucumber-reports'</cucumber.options>
     </properties>
     <profiles>
