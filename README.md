@@ -3,23 +3,18 @@
 ## Installation
 You need to have JDK 1.8 and Maven installed.
 
-## Run
+## Run and Debug
 We have to put the tags what we want to run, for example:
 
 ```
-mvn clean test "-Dcucumber.filter=-tags @SmokeTest"
+mvn clean test -DforkCount=0 "-Dcucumber.filter=-tags @SmokeTest"
 ```
 
-## Debug:
-```
-mvn clean test -DforkCount=0
-```
-
-## Multi browsers
+## Browsers
 Defaulst runs with Chrome, if we want to run with Firefox we have to run the next command:
 
 ```
-mvn clean test - Pfirefox
+mvn clean test -Pfirefox
 ```
 
 ## Technologies used:
@@ -32,9 +27,6 @@ mvn clean test - Pfirefox
 
 ## Reports
 The report, once we run the test, are located in target/cucumber-reports
-
-## Testcases
-The testcases are located in ./testCases.txt
 
 ## Project structure
 
@@ -71,3 +63,6 @@ The testcases are located in ./testCases.txt
             └── Home.feature
             └── Login.feature
 ```
+
+## Testcases
+The testcases are located in ./testCases.txt
